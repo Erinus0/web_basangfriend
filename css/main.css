@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+@font-face {
+    font-family: 'dimibang_new';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.1/dimibang_new.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 헤더 스타일 */
+.header {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+/* 타이틀 스타일 */
+.title {
+    font-family: 'dimibang_new', sans-serif;
+    font-size: 50px;
+    color: white;
+    margin: 0;
+}
+
+/* 헤더 오른쪽 스타일 */
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+/* 로그아웃 버튼 스타일 */
+#logout_btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#profile_img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+#user_name {
+    font-size: 12px;
+    color: white;
+    margin-top: 5px;
+    text-align: center;
+}

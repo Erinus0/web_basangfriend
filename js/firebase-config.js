@@ -1,6 +1,7 @@
 // firebase-config.js
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js';
 import { getAuth } from 'https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js';
+import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js';
 
 // Firebase 설정
 const firebaseConfig = {
@@ -16,8 +17,9 @@ const firebaseConfig = {
 // Firebase 앱 초기화
 const firebaseApp = initializeApp(firebaseConfig);
 
-// Firebase 인증 객체 얻기
+// Firebase 인증 객체 및 Firestore 데이터베이스 객체 얻기
 const auth = getAuth(firebaseApp);
+const db = getFirestore(firebaseApp); // ✅ Firestore 추가
 
-// 인증 객체 내보내기
-export { auth };
+// 인증 및 Firestore 내보내기
+export { auth, db }; // ✅ Firestore도 export

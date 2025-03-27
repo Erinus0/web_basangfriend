@@ -10,6 +10,22 @@ body {
     font-family: Arial, sans-serif;
 }
 
+body {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+/* 페이지가 로드될 때 보이도록 설정 */
+body.loaded {
+    opacity: 1;
+}
+
+/* 로그인 후 페이드아웃 효과 */
+.fade-out {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
 /* 컨테이너 설정 */
 .container {
     width: 100%;
