@@ -16,6 +16,29 @@
     padding: 15px 20px;
 }
 
+/* 메인 컨텐츠 스타일 */
+.main-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* 다운로드 버튼 스타일 */
+.download-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #e60000; /* 빨간색 */
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #cc0000; /* 어두운 빨간색 */
+}
+
 /* 타이틀 스타일 */
 .title {
     font-family: 'dimibang_new', sans-serif;
